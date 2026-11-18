@@ -1,0 +1,62 @@
+/* Small additions on top of Pico CSS */
+header.site-header {
+  border-bottom: 1px solid var(--pico-muted-border-color);
+  margin-bottom: 2rem;
+}
+
+header.site-header nav a.brand {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header.site-header nav a[aria-current="page"] {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.hero h1 {
+  margin-bottom: 0.25rem;
+}
+
+.hero p.subtitle {
+  font-size: 1.15rem;
+  color: var(--pico-muted-color);
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.grid-cards article {
+  margin: 0;
+}
+
+.grid-cards article h4 {
+  margin-bottom: 0.25rem;
+}
+
+.grid-cards article p {
+  margin-bottom: 0;
+}
+
+.role {
+  color: var(--pico-muted-color);
+  font-size: 0.9rem;
+}
+
+footer.site-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--pico-muted-border-color);
+  color: var(--pico-muted-color);
+  font-size: 0.85rem;
+}
+
+header.site-header .logo {
+  height: 2.5rem;   /* change this to make the logo bigger or smaller */
+  width: auto;
+  display: block;
+}
